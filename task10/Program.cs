@@ -7,6 +7,10 @@
 
 Console.Write("Введите число на разбор: ");
 int x = Convert.ToInt32(Console.ReadLine());
-int x1 = x % 100 /10;
-Console.WriteLine($"центральное число - {x1}");
+
+if(x > 99 && x < 1000){
+    int x1 = x % 100 /10;
+    Console.WriteLine($"центральное число - {x1}");
+} 
+else Console.WriteLine("Недопустимое значение!");
 
