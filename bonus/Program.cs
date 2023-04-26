@@ -17,8 +17,6 @@ int x2 = new Random().Next(-1000, 1000);
 int x3 = new Random().Next(-1000, 1000);
 int x4 = new Random().Next(-1000, 1000);
 
-int result = 0;
-
 if(x1 > x2){
     (x1, x2) = (x2, x1);
 }
@@ -37,7 +35,3 @@ if(x1 < x3){
 }else {
     CheckForNegativ(x4, x1);
 }
-
-if(result <=0 ){
-    Console.WriteLine("Отрезки не пересекаются");
-}else Console.WriteLine(result);
